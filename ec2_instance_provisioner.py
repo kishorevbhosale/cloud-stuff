@@ -81,8 +81,9 @@ def main():
         remaining -= len(instances)
         time.sleep(1)  # throttle to avoid hitting API rate limits
 
-    logging.info(f"Total launched: {len(all_instances)} out of {TOTAL_INSTANCES}")
+    logging.info(f"Total launched instances: {len(all_instances)} out of {TOTAL_INSTANCES}")
     print(f"Provisioning complete. {len(all_instances)} instances launched.")
 
 if __name__ == "__main__":
     main()
+
